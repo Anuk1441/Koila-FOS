@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f2f4f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .inline-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    .form-fields {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #444;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 8px;
+        margin-top: 10px;
+
+    }
+
+    .form-fields label.inline {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: normal;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        .wrapper {
+            padding: 20px;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="wrapper">
+        <h1>Application Form</h1>
+
+        <form action="" method="">
+                <div class="inline-wrap">
+                    <div class="form-fields">
+                        <label>First Name</label>
+                        <input type="text" name="fname">
+                    </div>
+                    <div class="form-fields">
+                        <label>Middle Name</label>
+                        <input type="text" name="mname">
+                    </div>
+                    <div class="form-fields">
+
+                        <label>Last Name</label>
+                        <input type="text" name="lname"><br>
+                    </div>
+                </div>
+
+            <div class="inline-wrap">
+
+                <div class="form-fields">
+                    <label>DOB</label>
+                    <input type="date" name="dob">
+                </div>
+                <div class="form-fields">
+                    <label>Age</label>
+                    <input type="number" name="age"><br>
+                </div>
+            </div>
+
+
+            <div class="inline-wrap">
+                <div class="form-fields">
+                    <label>Gender</label>
+                    <label>Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label>female</label>
+                    <input type="radio" name="gender" value="female"><br>
+                </div>
+            </div>
+
+            <div class="form-fields">
+                <label>Email address</label>
+                <input type="email" name="email"><br>
+            </div>
+            <div class="inline-wrap">
+                <div class="form-fields">
+                    <label>Position available</label>
+                    <label>Junior developer</label>
+                    <input type="radio" name="position available" value="Junior developer">
+                    <label>Mid level deveoper</label>
+                    <input type="radio" name="position available" value="Mid level deveoper">
+                    <label>Senior developer</label>
+                    <input type="radio" name="position available" value="Senior developer"><br>
+                </div>
+            </div>
+            <div class="inline-wrap">
+                <div class="form-fields">
+                    <label>Programming Language</label>
+                    <input type="checkbox" name="Programming Language">java
+                    <input type="checkbox" name="Programming Language">java script
+                    <input type="checkbox" name="Programming Language">Python
+                    <input type="checkbox" name="Programming Language">C++<br>
+                </div>
+            </div>
+
+            <div class="form-fields">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+
+            <div class="form-fields">
+                <label>Confirm Password</label>
+                <input type="password" name="password"><br>
+            </div>
+
+            <div class="form-fields">
+                <button type="submit">Submit</button>
+
+            </div>
+            <div class="form-fields">
+                <button type="reset">Reset</button>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
