@@ -5,7 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koila Multi Cuisine Restaurant</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <body>
+    <style>
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h2 {
+    color: #333;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #d35400;
+}
+
+.button a {
+    background: #d35400;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    background: #a84300;
+}
+
+/* HOME SECTION */
+#home img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* ABOUT US */
+#about-us {
+    padding: 50px;
+    background: #fafafa;
+}
+
+#about-us h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.inline-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-img img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.aboutusparagraph {
+    max-width: 500px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* SERVICES */
+#Services {
+    padding: 50px;
+}
+
+#Services h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-1, .service-2, .service-3 {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-wrap h2 {
+    margin-bottom: 10px;
+    color: #d35400;
+}
+
+/* CONTACT */
+#Contactus {
+    padding: 50px;
+    background: #fafafa;
+}
+
+#Contactus h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background: #d35400;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #a84300;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer-icons {
+    margin-bottom: 10px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .inline-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+    </style>
     <header id="site-header">
         <div class="header-wrapper">
 
@@ -28,8 +247,115 @@
             </div>
         </div>
     </header>
-    <main>
-        <section id="Home"></section> 
+            <main>
+        <section id="home">
+            <img src="img/koila.1.jpg" height="300" width="100%">
+        </section>
+
+        <section id="aboutus">
+            <h1>About Us</h1>
+            <div class="inline-wrap">
+                <div class="aboutus-img">
+                    <img src="img/koila.2.webp" height="200" width="150">
+                </div>
+
+                <div class="aboutusparagraph">
+                    <p>
+                        Koila Multi Cuisine Restaurant is located in Sorakhutte,Sankhamul and Gatthaghar,Nepal.
+                        The restaurant offers a diverse menu that features a variety of culinary traditions, 
+                        including Nepali, Indian,and continental dishes. They focus on using fresh
+                        ingredients and authentic spices to create flavorful dishes.Additionally, Koila offers 
+                        delivery options, allowing customers to enjoy their meals home.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Services">
+            <h1>Services</h1>
+            <div class="service-wrap">
+                <div class="service-1">
+                    <h2>Service 1</h2>
+                    <p>
+                       Where flavors from around the world meet the warmth of exceptional service! As the proud owner, 
+                       my goal is to create a dining experience that brings together diverse culinary traditions,
+                       offering something special for every palate. At Koila, our menu features a wide range of 
+                       multi-cuisine dishes,
+                    </p>
+                </div>
+
+                <div class="service-2">
+                    <h2>Service 2</h2>
+                    <p>
+                       Where flavors from around the world meet the warmth of exceptional service! As the proud owner, 
+                       my goal is to create a dining experience that brings together diverse culinary traditions,
+                       offering something special for every palate. At Koila, our menu features a wide range of 
+                       multi-cuisine dishes,
+                    </p>
+                </div>
+
+                <div class="service-3">
+                    <h2>Service 3</h2>
+                    <p>
+                        We use only the freshest 
+                        ingredients and authentic spices to craft each dish with care,
+                        ensuring a burst of flavor in every bite.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h1>Contact Us</h1>
+                <form action="" method="">
+                    <div class="inline-wrap">
+                        <div class="form-fields">
+                            <label>First Name</label>
+                            <input type="text" name="fname"><br>
+                        </div>
+
+                        <div class="form-fields">
+                            <label>Last Name</label>
+                            <input type="text" name="lname"><br>
+                        </div>
+                    </div>
+
+                    <div class="inline-wrap">
+                        <div class="form-fields">
+                            <label>Email</label>
+                            <input type="email" name="email"><br>
+                        </div>
+
+                        <div class="form-fields">
+                            <label>Phone Number</label>
+                            <input type="number" name="phone-number"><br>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER WITH ICONS -->
+    <footer>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook-f" style="color: blue;"></i></a>
+            <a href="#"><i class="fab fa-instagram" style="color:rgb(167, 11, 11);"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in" style="color:blue;"></i></a>
+        </div>
+        <p> &copy; 2026</p>
+    </footer>
+
+
+
+</body>
+
+</html>
+        </section> 
     </main>
     
 </body>
